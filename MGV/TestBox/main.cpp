@@ -20,7 +20,7 @@ void PackMGV()
 	header.uiBitCount = 32;
 	header.usWidth = 1280;
 	header.usHight = 720;
-	header.uiFrameIndexCount = 0x0DF0;
+	header.uiFrameIndexCount = 0x0DF0; // FrameRate * Time. If Value Too Large Game Will Get Stuck After Playback
 	header.uiFrameRateTime = 1000; //1s
 	header.uiFrameRate = 30 * 1000; //30 * 1000
 
